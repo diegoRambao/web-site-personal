@@ -11,16 +11,16 @@ export const Navbar = () => {
                   <img className="navbar-nav-img" src={logo} alt="Logo brand" />
                </div>
                <div className="nav-items">
-                  <a className="item-nav" href="#">
+                  <a className="item-nav" href="/home">
                      Home
                   </a>
-                  <a className="item-nav" href="#">
+                  <a className="item-nav" href="/about">
                      About me
                   </a>
-                  <a className="item-nav" href="#">
+                  <a className="item-nav" href="/project">
                      Projects
                   </a>
-                  <a className="item-nav" href="#">
+                  <a className="item-nav" href="/contact">
                      Contact
                   </a>
                </div>
