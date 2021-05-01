@@ -1,3 +1,4 @@
+import React from 'react'
 import './index.css'
 import logo from '../../static/images/logo.svg'
 
