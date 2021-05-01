@@ -1,0 +1,64 @@
+.home {
+   margin-top: 50px;
+}
+
+.img-home {
+   width: 40%;
+   position: absolute;
+   top: 50px;
+   right: 0;
+   z-index: -1;
+}
+
+.home-intro {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: calc(80vh - 100px);
+}
+
+.home-text {
+   color: #414141;
+   margin-bottom: 10px;
+   width: 50%;
+}
+
+.home-text p {
+   font-size: 18px;
+   margin: 0;
+}
+
+.home-text h1 {
+   font-size: 3em;
+   margin: 0;
+   font-weight: 900;
+   margin-bottom: 5px;
+}
+
+.home-text .adjust {
+   font-size: 1.4em;
+   margin: 0;
+}
+
+.button-cv {
+   margin-top: 40px;
+}
+
+.img-hero {
+   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+   .home-intro {
+      flex-direction: column;
+   }
+
+   .home-text {
+      width: 100%;
+      text-align: center;
+   }
+
+   .img-hero {
+      width: 100%;
+   }
+}
