@@ -21,6 +21,7 @@
    height: 28rem;
    border-radius: 5px;
    filter: drop-shadow(0 1.6rem 1.6rem rgba(51, 51, 51, 0.25));
+   object-fit: cover;
 }
 
 .about-text {

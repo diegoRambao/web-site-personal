@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Navbar } from './../components/Navbar'
 import { Home } from './../components/Home'
 import { About } from '../components/About'
+import { Skill } from '../components/Skill'
 
 export const HomePage = () => {
    return (
@@ -11,6 +12,7 @@ export const HomePage = () => {
          <main>
             <Home />
             <About />
+            <Skill />
             <br />
             <br />
             <br />
