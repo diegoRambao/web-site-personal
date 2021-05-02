@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SectionHome = styled.section`
-   margin-top: 50px;
+   margin-top: 100px;
    margin-bottom: 100px;
 `
 
