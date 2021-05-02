@@ -1,4 +1,6 @@
-.button-primary {
+import styled from 'styled-components'
+
+export const ButtonPrimay = styled.button`
    border: none;
    outline: none;
    background: #5340ff;
@@ -8,8 +10,8 @@
    font-size: 16px;
    font-weight: 500;
    box-shadow: 2px 13px 15px -3px rgba(0, 0, 0, 0.1);
-}
 
-.button-primary:hover {
-   cursor: pointer;
-}
+   &:hover {
+      cursor: pointer;
+   }
+`

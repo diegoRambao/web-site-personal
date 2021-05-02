@@ -4,6 +4,7 @@ import { Navbar } from './../components/Navbar'
 import { Home } from './../components/Home'
 import { About } from '../components/About'
 import { Skill } from '../components/Skill'
+import { Project } from '../components/Project'
 
 export const HomePage = () => {
    return (
@@ -13,6 +14,7 @@ export const HomePage = () => {
             <Home />
             <About />
             <Skill />
+            <Project />
             <br />
             <br />
             <br />

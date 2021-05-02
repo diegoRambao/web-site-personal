@@ -1,31 +1,21 @@
 import React from 'react'
-import './index.css'
 import logo from '../../static/images/logo.svg'
+import { Nav, NavbarBrand, NavbarImg, NavbarItems, ItemNav } from './style'
 
 export const Navbar = () => {
    return (
-      <nav className="nav">
+      <Nav>
          <div className="container">
-            <div className="navbar-nav">
-               <div className="nav-brand">
-                  <img className="navbar-nav-img" src={logo} alt="Logo brand" loading="lazy" />
-               </div>
-               <div className="nav-items">
-                  <a className="item-nav" href="/home">
-                     Home
-                  </a>
-                  <a className="item-nav" href="/about">
-                     About me
-                  </a>
-                  <a className="item-nav" href="/project">
-                     Projects
-                  </a>
-                  <a className="item-nav" href="/contact">
-                     Contact
-                  </a>
-               </div>
-            </div>
+            <NavbarBrand>
+               <NavbarImg src={logo} alt="Logo brand" loading="lazy" />
+               <NavbarItems>
+                  <ItemNav href="/home">Home</ItemNav>
+                  <ItemNav href="/about">About me</ItemNav>
+                  <ItemNav href="/project">Projects</ItemNav>
+                  <ItemNav href="/contact">Contact</ItemNav>
+               </NavbarItems>
+            </NavbarBrand>
          </div>
-      </nav>
+      </Nav>
    )
 }

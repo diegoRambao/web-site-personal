@@ -1,6 +1,6 @@
 import React from 'react'
-import './style.css'
+import { ButtonPrimay } from './style'
 
 export const Button = ({ label }) => {
-   return <button className="button-primary">{label}</button>
+   return <ButtonPrimay>{label}</ButtonPrimay>
 }
