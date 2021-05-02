@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-size: calc(12px + 0.4vw);
+   background-color: ${(props) => (props.theme ? '#262626' : '#fff')}
 }
 
     code {

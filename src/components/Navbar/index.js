@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Nav, NavbarBrand, NavbarImg, NavbarItems, ItemNav } from './style'
 import { ToggleTheme } from '../ToggleTheme'
+import ThemeContext from '../../context/ThemeContext'
 import logo from '../../static/images/logo.svg'
 
 export const Navbar = () => {
+   const { isDark } = useContext(ThemeContext)
    return (
-      <Nav>
+      <Nav theme={isDark}>
          <div className="container">
             <NavbarBrand>
                <NavbarImg src={logo} alt="Logo brand" loading="lazy" />

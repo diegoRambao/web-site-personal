@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
    padding: 0.7rem;
    position: fixed;
-   background-color: #fff;
+   background-color: ${(props) => (props.theme === true ? '#2f2f2f' : '#fff')};
    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
    top: 0;
    width: 100vw;

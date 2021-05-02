@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './App'
-import GlobalStyle from './globalStyles'
 import reportWebVitals from './reportWebVitals'
+import { ThemeContextProvider } from './context/ThemeContext'
 
 ReactDOM.render(
    <React.StrictMode>
-      <GlobalStyle />
-      <App />
+      <ThemeContextProvider>
+         <App />
+      </ThemeContextProvider>
    </React.StrictMode>,
    document.getElementById('root')
 )

@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { Fragment, useContext } from 'react'
 import { HomePage } from './pages/'
+import GlobalStyle from './globalStyles'
+import ThemeContext from './context/ThemeContext'
 
-export function App() {
-   return <HomePage />
+export const App = () => {
+   const { isDark } = useContext(ThemeContext)
+   return (
+      <Fragment>
+         <GlobalStyle theme={isDark} />
+         <HomePage />
+      </Fragment>
+   )
 }
