@@ -91,6 +91,10 @@ export const OtherProjects = styled.div`
    grid-template-columns: 1fr 1fr;
    gap: 40px;
    margin-top: 60px;
+
+   @media (max-width: 560px) {
+      grid-template-columns: 1fr;
+   }
 `
 
 export const OtherProjectsLink = styled.a`

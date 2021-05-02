@@ -2,8 +2,12 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
    padding: 0.7rem;
+   position: fixed;
    background-color: #fff;
    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+   top: 0;
+   width: 100vw;
+   z-index: 1000;
 `
 
 export const NavbarBrand = styled.div`
