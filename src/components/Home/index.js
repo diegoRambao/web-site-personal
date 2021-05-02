@@ -7,7 +7,7 @@ import { Button } from '../Button'
 export const Home = () => {
    return (
       <section className="home">
-         <img src={rect} className="img-home" alt="Img home" />
+         <img src={rect} className="img-home" alt="Img home" loading="lazy" />
          <div className="container">
             <div className="home-intro">
                <div className="home-text">
@@ -18,7 +18,7 @@ export const Home = () => {
                      <Button label="Descargar CV" />
                   </div>
                </div>
-               <img className="img-hero" src={webdev} alt="Img Hero" />
+               <img className="img-hero" src={webdev} alt="Img Hero" loading="lazy" />
             </div>
          </div>
       </section>

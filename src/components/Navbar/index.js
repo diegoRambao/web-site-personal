@@ -8,7 +8,7 @@ export const Navbar = () => {
          <div className="container">
             <div className="navbar-nav">
                <div className="nav-brand">
-                  <img className="navbar-nav-img" src={logo} alt="Logo brand" />
+                  <img className="navbar-nav-img" src={logo} alt="Logo brand" loading="lazy" />
                </div>
                <div className="nav-items">
                   <a className="item-nav" href="/home">

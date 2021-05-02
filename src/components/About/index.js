@@ -8,11 +8,11 @@ export const About = () => {
    return (
       <section className="about-me">
          <Title label="About me" />
-         <img src={circle} className="circle-about" alt="circle about" />
+         <img src={circle} className="circle-about" alt="circle about" loading="lazy" />
          <div className="container">
             <div className="about-section-container">
                <div className="image-div">
-                  <img src={profile} className="about-img" alt="Foto sobre mí" />
+                  <img src={profile} className="about-img" alt="Foto sobre mí" loading="lazy" />
                </div>
                <div className="about-text">
                   <p>

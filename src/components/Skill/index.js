@@ -14,10 +14,10 @@ export const Skill = () => {
          </div>
          <div className="container relative ">
             <div className="container-skill">
-               <img src={html} className="icon-skill" alt="Icon html" />
-               <img src={js} className="icon-skill" alt="Icon html" />
-               <img src={node} className="icon-skill" alt="Icon html" />
-               <img src={react} className="icon-skill" alt="Icon html" />
+               <img src={html} className="icon-skill" alt="Icon html" loading="lazy" />
+               <img src={js} className="icon-skill" alt="Icon html" loading="lazy" />
+               <img src={node} className="icon-skill" alt="Icon html" loading="lazy" />
+               <img src={react} className="icon-skill" alt="Icon html" loading="lazy" />
             </div>
             <div className="container-skills-words">
                <p className="skills-words" style={{ top: '50px', left: '100%', fontSize: '23px' }}>
