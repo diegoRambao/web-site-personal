@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
    SectionHome,
    ImgHome,
@@ -10,17 +10,19 @@ import {
    ContainerButtonCv,
    ImgHero,
 } from './style'
+import ThemeContext from '../../context/ThemeContext'
 import rect from '../../static/images/rect.svg'
 import webdev from '../../static/images/web-development.svg'
 import { Button } from '../Button'
 
 export const Home = () => {
+   const { isDark } = useContext(ThemeContext)
    return (
       <SectionHome>
          <ImgHome src={rect} alt="Img home" loading="lazy" />
          <div className="container">
             <HomeIntro>
-               <HomeText>
+               <HomeText theme={isDark}>
                   <SmallParagraph>Hola soy</SmallParagraph>
                   <HomeTitle>DIEGO RAMBAO</HomeTitle>
                   <TightParagraph>DESARROLLADOR WEB CREATIVO </TightParagraph>

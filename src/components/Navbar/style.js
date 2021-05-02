@@ -30,7 +30,7 @@ export const NavbarItems = styled.div`
 `
 
 export const ItemNav = styled.a`
-   color: #5340ff;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#5340ff')};
    font-weight: 600;
    text-decoration: none;
    font-size: 0.9375em;

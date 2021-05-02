@@ -29,7 +29,7 @@ export const ProjectRow = styled.div`
       gap: 10px;
 
       .reverse {
-         flex-direction: column-reverse;
+         flex-direction: column-reverse !important;
       }
    }
 `
@@ -72,11 +72,11 @@ export const ProjectTitle = styled.h3`
    margin-bottom: 0.5rem;
    font-size: 1.6rem;
    font-weight: 700;
-   color: #414141;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
 `
 
 export const ProjectDescription = styled.p`
-   color: #5a5a5a;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#5a5a5a')};
    line-height: 1.4;
    font-size: 0.9rem;
    margin-bottom: 1rem;
@@ -99,14 +99,14 @@ export const OtherProjects = styled.div`
 
 export const OtherProjectsLink = styled.a`
    text-decoration: none;
-   color: #414141;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
 `
 
 export const CardOtherProject = styled.div`
    padding: 0 1rem 1.2rem;
    border-radius: 0.5rem;
-   background: #fff;
-   box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
+   background: ${(props) => (props.theme === true ? '#2b2b2b' : '#fff')};
+   box-shadow: ${(props) => (props.theme === true ? '0 1.6rem 2.4rem rgb(0 0 0 / 25%);' : '2px 2px 50px rgb(0 0 0 / 15%)')};
    position: relative;
 `
 

@@ -28,7 +28,7 @@ export const ContainerSkillWords = styled.div`
 `
 export const SkillWord = styled.p`
    position: absolute;
-   color: rgb(94, 76, 255, 0.46);
+   color: ${(props) => (props.theme === true ? '#989898' : 'rgba(94, 76, 255, 0.46)')};
    z-index: -1;
    left: 0px;
    right: 0px;

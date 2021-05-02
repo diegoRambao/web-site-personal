@@ -13,10 +13,18 @@ export const Navbar = () => {
                <NavbarImg src={logo} alt="Logo brand" loading="lazy" />
                <div style={{ display: 'flex', alignItems: 'center' }}>
                   <NavbarItems>
-                     <ItemNav href="/home">Home</ItemNav>
-                     <ItemNav href="/about">About me</ItemNav>
-                     <ItemNav href="/project">Projects</ItemNav>
-                     <ItemNav href="/contact">Contact</ItemNav>
+                     <ItemNav href="/home" theme={isDark}>
+                        Home
+                     </ItemNav>
+                     <ItemNav href="/about" theme={isDark}>
+                        About me
+                     </ItemNav>
+                     <ItemNav href="/project" theme={isDark}>
+                        Projects
+                     </ItemNav>
+                     <ItemNav href="/contact" theme={isDark}>
+                        Contact
+                     </ItemNav>
                   </NavbarItems>
                   <ToggleTheme />
                </div>

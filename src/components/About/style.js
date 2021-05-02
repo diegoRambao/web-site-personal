@@ -46,6 +46,6 @@ export const AboutText = styled.div`
 export const Paragraph = styled.p`
    font-weight: 400;
    font-size: 1.2em;
-   color: #414141;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
    margin-bottom: 2.4rem;
 `

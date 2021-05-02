@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
    SectionProject,
    ContainerProjects,
@@ -16,6 +16,7 @@ import {
    CardOtherProjectImg,
    CardOtherProjectDescription,
 } from './style'
+import ThemeContext from '../../context/ThemeContext'
 import { Title } from '../Title'
 import { Button } from '../Button'
 import project_task from '../../static/images/Thumbnail-ListaDeTareas.jpg'
@@ -24,6 +25,7 @@ import project_blockmaster from '../../static/images/Thumbnail-blockmaster.jpg'
 import project_pets from '../../static/images/Thumbnail-Adopcion.jpg'
 
 export const Project = () => {
+   const { isDark } = useContext(ThemeContext)
    return (
       <SectionProject>
          <div className="text-center">
@@ -35,8 +37,8 @@ export const Project = () => {
                   <ProjectImg src={project_task} alt="Proyecto task" />
                </ProjectWraperImg>
                <ProjectText>
-                  <ProjectTitle>Lista de tareas</ProjectTitle>
-                  <ProjectDescription>
+                  <ProjectTitle theme={isDark}>Lista de tareas</ProjectTitle>
+                  <ProjectDescription theme={isDark}>
                      Con esta app podrás organizar todas tus ideas y planear tus próximos proyectos, con el fin de...
                   </ProjectDescription>
                   <ProjectLink>
@@ -47,8 +49,8 @@ export const Project = () => {
 
             <ProjectRow className="reverse">
                <ProjectText>
-                  <ProjectTitle>Guappjolotas</ProjectTitle>
-                  <ProjectDescription>
+                  <ProjectTitle theme={isDark}>Guappjolotas</ProjectTitle>
+                  <ProjectDescription theme={isDark}>
                      Nada como una Guajolota para empezar el día. Disfruta del diseño de esta bonita y completa...
                   </ProjectDescription>
                   <ProjectLink>
@@ -61,8 +63,8 @@ export const Project = () => {
             </ProjectRow>
 
             <OtherProjects>
-               <OtherProjectsLink href="/project">
-                  <CardOtherProject>
+               <OtherProjectsLink href="/project" theme={isDark}>
+                  <CardOtherProject theme={isDark}>
                      <CardOtherProjectImg src={project_blockmaster} alt="blockmaster" />
                      <CardOtherProjectTitle>Block Master</CardOtherProjectTitle>
                      <CardOtherProjectDescription>
@@ -71,8 +73,8 @@ export const Project = () => {
                   </CardOtherProject>
                </OtherProjectsLink>
 
-               <OtherProjectsLink href="/project">
-                  <CardOtherProject>
+               <OtherProjectsLink href="/project" theme={isDark}>
+                  <CardOtherProject theme={isDark}>
                      <CardOtherProjectImg src={project_pets} alt="pets" />
                      <CardOtherProjectTitle>PetsApp</CardOtherProjectTitle>
                      <CardOtherProjectDescription>
@@ -81,8 +83,8 @@ export const Project = () => {
                   </CardOtherProject>
                </OtherProjectsLink>
 
-               <OtherProjectsLink href="/project">
-                  <CardOtherProject>
+               <OtherProjectsLink href="/project" theme={isDark}>
+                  <CardOtherProject theme={isDark}>
                      <CardOtherProjectImg src={project_pets} alt="pets" />
                      <CardOtherProjectTitle>PetsApp</CardOtherProjectTitle>
                      <CardOtherProjectDescription>

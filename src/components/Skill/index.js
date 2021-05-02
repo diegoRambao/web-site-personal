@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Title } from '../Title'
 import { SectionSkill, ContainerSkill, IconSkill, ContainerSkillWords, SkillWord } from './style'
 import html from '../../static/images/html.svg'
 import js from '../../static/images/js.svg'
 import node from '../../static/images/node.svg'
 import react from '../../static/images/react.svg'
+import ThemeContext from '../../context/ThemeContext'
 
 const listOfSkillsMeasures = [
    { top: '50px', left: '100%', fontSize: '23px', label: 'Css' },
@@ -23,6 +24,7 @@ const listOfSkillsMeasures = [
 ]
 
 export const Skill = () => {
+   const { isDark } = useContext(ThemeContext)
    return (
       <SectionSkill>
          <div className="text-center">
@@ -37,7 +39,7 @@ export const Skill = () => {
             </ContainerSkill>
             <ContainerSkillWords>
                {listOfSkillsMeasures.map((skillWord, index) => (
-                  <SkillWord {...skillWord} key={index}>
+                  <SkillWord {...skillWord} key={index} theme={isDark}>
                      {skillWord.label}
                   </SkillWord>
                ))}

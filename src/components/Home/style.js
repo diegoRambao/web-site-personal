@@ -25,7 +25,7 @@ export const HomeIntro = styled.div`
 `
 
 export const HomeText = styled.div`
-   color: #414141;
+   color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
    margin-bottom: 10px;
    width: 50%;
 
