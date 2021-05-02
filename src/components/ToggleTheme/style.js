@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const ContainerTheme = styled.label`
-   margin-right: 30px;
+   margin-left: 30px;
+   &:hover {
+      cursor: pointer;
+   }
    .toggle-checkbox {
       position: absolute;
       opacity: 0;
