@@ -1,19 +1,8 @@
 import React, { useContext } from 'react'
-import {
-   SectionProject,
-   ContainerProjects,
-   ProjectRow,
-   ProjectImg,
-   ProjectText,
-   ProjectTitle,
-   ProjectDescription,
-   ProjectLink,
-   ProjectWraperImg,
-   OtherProjects,
-} from './style'
+import { SectionProject, ContainerProjects, OtherProjects } from './style'
 import ThemeContext from '../../context/ThemeContext'
 import { Title } from '../Title'
-import { Button } from '../Button'
+import { ProjectRow } from '../ProjectRow'
 import { CardOtherProject } from '../CardOtherProject'
 import project_task from '../../static/images/Thumbnail-ListaDeTareas.jpg'
 import project_guappjolotas from '../../static/images/Thumbnail-guappjolotas.jpg'
@@ -28,35 +17,23 @@ export const Project = () => {
             <Title label="Projects" />
          </div>
          <ContainerProjects>
-            <ProjectRow>
-               <ProjectWraperImg>
-                  <ProjectImg src={project_task} alt="Proyecto task" />
-               </ProjectWraperImg>
-               <ProjectText>
-                  <ProjectTitle theme={isDark}>Lista de tareas</ProjectTitle>
-                  <ProjectDescription theme={isDark}>
-                     Con esta app podrás organizar todas tus ideas y planear tus próximos proyectos, con el fin de...
-                  </ProjectDescription>
-                  <ProjectLink>
-                     <Button label="Ver proyecto" />
-                  </ProjectLink>
-               </ProjectText>
-            </ProjectRow>
+            <ProjectRow
+               reverse={false}
+               theme={isDark}
+               link="/project"
+               img={project_task}
+               title="Lista de tareas"
+               desription="Con esta app podrás organizar todas tus ideas y planear tus próximos proyectos, con el fin de..."
+            />
 
-            <ProjectRow reverse={true}>
-               <ProjectText>
-                  <ProjectTitle theme={isDark}>Guappjolotas</ProjectTitle>
-                  <ProjectDescription theme={isDark}>
-                     Nada como una Guajolota para empezar el día. Disfruta del diseño de esta bonita y completa...
-                  </ProjectDescription>
-                  <ProjectLink>
-                     <Button label="Ver proyecto" />
-                  </ProjectLink>
-               </ProjectText>
-               <ProjectWraperImg>
-                  <ProjectImg src={project_guappjolotas} alt="Proyecto task" />
-               </ProjectWraperImg>
-            </ProjectRow>
+            <ProjectRow
+               reverse={true}
+               theme={isDark}
+               link="/project"
+               img={project_guappjolotas}
+               title="Guappjolotas"
+               desription="Nada como una Guajolota para empezar el día. Disfruta del diseño de esta bonita y completa..."
+            />
 
             <OtherProjects>
                <CardOtherProject
