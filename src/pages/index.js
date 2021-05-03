@@ -6,6 +6,7 @@ import { About } from '../components/About'
 import { Skill } from '../components/Skill'
 import { Project } from '../components/Project'
 import { Contact } from '../components/Contact'
+import { Footer } from '../components/Footer'
 
 export const HomePage = () => {
    return (
@@ -17,33 +18,8 @@ export const HomePage = () => {
             <Skill />
             <Project />
             <Contact />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
          </main>
+         <Footer />
       </Fragment>
    )
 }

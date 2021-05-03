@@ -26,7 +26,7 @@ export const Contact = () => {
                      <MapPin /> <span>Barranquillla, Atlantico</span>
                   </p>
                   <p className="contact-info-item">
-                     <Mail /> <span>Barranquillla, Atlantico</span>
+                     <Mail /> <span>diegoandresrambao@gmail.com</span>
                   </p>
                   <p className="contact-info-item">
                      <Phone /> <span> +57 3003086333</span>
