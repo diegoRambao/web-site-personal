@@ -47,7 +47,7 @@ export const Project = () => {
                </ProjectText>
             </ProjectRow>
 
-            <ProjectRow className="reverse">
+            <ProjectRow reverse={true}>
                <ProjectText>
                   <ProjectTitle theme={isDark}>Guappjolotas</ProjectTitle>
                   <ProjectDescription theme={isDark}>

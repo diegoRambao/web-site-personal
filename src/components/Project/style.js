@@ -25,12 +25,8 @@ export const ProjectRow = styled.div`
    gap: 50px;
 
    @media (max-width: 700px) {
-      flex-direction: column;
+      flex-direction: ${(props) => (props.reverse ? 'column-reverse' : 'column')};
       gap: 10px;
-
-      .reverse {
-         flex-direction: column-reverse !important;
-      }
    }
 `
 
@@ -96,10 +92,21 @@ export const OtherProjects = styled.div`
       grid-template-columns: 1fr;
    }
 `
+export const CardOtherProjectImg = styled.img`
+   width: 100%;
+   transform: translateY(-1rem);
+   border-radius: 6px;
+   box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
+   transition: transform 0.35s;
+`
 
 export const OtherProjectsLink = styled.a`
    text-decoration: none;
    color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
+
+   &:hover ${CardOtherProjectImg} {
+      transform: translateY(-1.8rem);
+   }
 `
 
 export const CardOtherProject = styled.div`
@@ -108,18 +115,6 @@ export const CardOtherProject = styled.div`
    background: ${(props) => (props.theme === true ? '#2b2b2b' : '#fff')};
    box-shadow: ${(props) => (props.theme === true ? '0 1.6rem 2.4rem rgb(0 0 0 / 25%);' : '2px 2px 50px rgb(0 0 0 / 15%)')};
    position: relative;
-`
-
-export const CardOtherProjectImg = styled.img`
-   width: 100%;
-   transform: translateY(-1rem);
-   border-radius: 6px;
-   box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
-   transition: transform 0.35s;
-
-   &:hover {
-      transform: translateY(-1.8rem);
-   }
 `
 
 export const CardOtherProjectTitle = styled.h3`
