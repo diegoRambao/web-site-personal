@@ -10,15 +10,11 @@ import {
    ProjectLink,
    ProjectWraperImg,
    OtherProjects,
-   OtherProjectsLink,
-   CardOtherProject,
-   CardOtherProjectTitle,
-   CardOtherProjectImg,
-   CardOtherProjectDescription,
 } from './style'
 import ThemeContext from '../../context/ThemeContext'
 import { Title } from '../Title'
 import { Button } from '../Button'
+import { CardOtherProject } from '../CardOtherProject'
 import project_task from '../../static/images/Thumbnail-ListaDeTareas.jpg'
 import project_guappjolotas from '../../static/images/Thumbnail-guappjolotas.jpg'
 import project_blockmaster from '../../static/images/Thumbnail-blockmaster.jpg'
@@ -63,35 +59,21 @@ export const Project = () => {
             </ProjectRow>
 
             <OtherProjects>
-               <OtherProjectsLink href="/project" theme={isDark}>
-                  <CardOtherProject theme={isDark}>
-                     <CardOtherProjectImg src={project_blockmaster} alt="blockmaster" />
-                     <CardOtherProjectTitle>Block Master</CardOtherProjectTitle>
-                     <CardOtherProjectDescription>
-                        Block Master es la plataforma de contenido más reciente en el mercado pero a la vez la más...
-                     </CardOtherProjectDescription>
-                  </CardOtherProject>
-               </OtherProjectsLink>
+               <CardOtherProject
+                  link="/project"
+                  theme={isDark}
+                  img={project_blockmaster}
+                  title="Block Master"
+                  description="Block Master es la plataforma de contenido más reciente en el mercado pero a la vez la más..."
+               />
 
-               <OtherProjectsLink href="/project" theme={isDark}>
-                  <CardOtherProject theme={isDark}>
-                     <CardOtherProjectImg src={project_pets} alt="pets" />
-                     <CardOtherProjectTitle>PetsApp</CardOtherProjectTitle>
-                     <CardOtherProjectDescription>
-                        Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos...
-                     </CardOtherProjectDescription>
-                  </CardOtherProject>
-               </OtherProjectsLink>
-
-               <OtherProjectsLink href="/project" theme={isDark}>
-                  <CardOtherProject theme={isDark}>
-                     <CardOtherProjectImg src={project_pets} alt="pets" />
-                     <CardOtherProjectTitle>PetsApp</CardOtherProjectTitle>
-                     <CardOtherProjectDescription>
-                        Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos...
-                     </CardOtherProjectDescription>
-                  </CardOtherProject>
-               </OtherProjectsLink>
+               <CardOtherProject
+                  link="/project"
+                  theme={isDark}
+                  img={project_pets}
+                  title="PetsApp"
+                  description="Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos..."
+               />
             </OtherProjects>
          </ContainerProjects>
       </SectionProject>
