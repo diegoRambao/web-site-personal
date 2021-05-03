@@ -16,7 +16,7 @@ export const ContainerContact = styled.div`
    justify-content: space-between;
    gap: 4rem;
    border-radius: 10px;
-   background: ${(props) => (props.theme === true ? '#2b2b2b' : '#fff')};
+   background: ${(props) => (props.theme === true ? '#2f2f2f' : '#fff')};
    box-shadow: ${(props) => (props.theme === true ? '0 1.6rem 2.4rem rgb(0 0 0 / 25%);' : '2px 2px 50px rgb(0 0 0 / 15%)')};
 
    .contact-text {
