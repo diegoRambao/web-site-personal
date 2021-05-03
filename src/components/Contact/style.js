@@ -40,15 +40,6 @@ export const ContainerContact = styled.div`
       align-items: center;
       gap: 10px;
    }
-   .container-social-media {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-   }
-
-   .link-social-media {
-      color: ${(props) => (props.theme === true ? '#fff' : '#414141')};
-   }
 
    .form-contact {
       width: 50%;

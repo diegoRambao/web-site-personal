@@ -20,14 +20,4 @@ export const FooterContainer = styled.footer`
       font-weight: 700;
       color: #f8f8f8;
    }
-
-   .footer-socialmedia {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-   }
-
-   .link-social-media {
-      color: #f8f8f8;
-   }
 `

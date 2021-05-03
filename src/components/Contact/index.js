@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { SectionContact, ContainerContact } from './style'
 import { Title } from '../Title'
-import { MapPin, Mail, Phone, Twitter, Instagram, Linkedin, GitHub } from 'react-feather'
+import { ListOfSocialMedia } from '../ListOfSocialMedia'
+import { MapPin, Mail, Phone } from 'react-feather'
 import ThemeContext from '../../context/ThemeContext'
 
 export const Contact = () => {
@@ -31,22 +32,8 @@ export const Contact = () => {
                   <p className="contact-info-item">
                      <Phone /> <span> +57 3003086333</span>
                   </p>
-
                   <h2 className="title-contact-info">Follow</h2>
-                  <div className="container-social-media">
-                     <a href="/project" className="link-social-media">
-                        <Twitter />
-                     </a>
-                     <a href="/project" className="link-social-media">
-                        <Linkedin />
-                     </a>
-                     <a href="/project" className="link-social-media">
-                        <Instagram />
-                     </a>
-                     <a href="/project" className="link-social-media">
-                        <GitHub />
-                     </a>
-                  </div>
+                  <ListOfSocialMedia color={isDark ? '#f8f8f8' : '#414141'} />
                </div>
 
                <form onSubmit={handleSubmit} className="form-contact">
