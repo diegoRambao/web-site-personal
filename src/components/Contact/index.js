@@ -37,9 +37,18 @@ export const Contact = () => {
                </div>
 
                <form onSubmit={handleSubmit} className="form-contact">
-                  <input type="text" name="email" id="email" placeholder="example@gmail.com" className="input-text-contact" />
-                  <input type="text" name="name" id="name" placeholder="Juan José" className="input-text-contact" />
-                  <textarea name="message" id="message" placeholder="Hey, there!" className="textarea-contact"></textarea>
+                  <div className="form-control">
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" placeholder="example@gmail.com" className="input-text-contact" />
+                  </div>
+                  <div className="form-control">
+                     <label for="name">Name</label>
+                     <input type="text" name="name" id="name" placeholder="Juan José" className="input-text-contact" />
+                  </div>
+                  <div className="form-control">
+                     <label for="message">Messsage</label>
+                     <textarea name="message" id="message" placeholder="Hey, there!" className="textarea-contact"></textarea>
+                  </div>
                   <button className="button-submit-contact">Enviar</button>
                </form>
             </ContainerContact>

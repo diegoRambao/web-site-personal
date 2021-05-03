@@ -47,6 +47,12 @@ export const ContainerContact = styled.div`
    .container-input {
       width: 100%;
    }
+   .form-control {
+      margin-top: 10px;
+   }
+   label {
+      color: #414141;
+   }
    input,
    textarea {
       padding: 16px 20px;
