@@ -17,20 +17,20 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .container {
-    max-width: 80%;
-    margin: 0 auto;
+      max-width: 80%;
+      margin: 0 auto;
     }
 
     .absolute {
-    position: absolute;
+      position: absolute;
     }
 
     .relative {
-    position: relative;
+      position: relative;
     }
 
     .text-center {
-    text-align: center;
+      text-align: center;
     }
  
 `
