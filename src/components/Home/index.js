@@ -18,7 +18,7 @@ import { Button } from '../Button'
 export const Home = () => {
    const { isDark } = useContext(ThemeContext)
    return (
-      <SectionHome>
+      <SectionHome id="home">
          <ImgHome src={rect} alt="Img home" loading="lazy" />
          <div className="container">
             <HomeIntro>

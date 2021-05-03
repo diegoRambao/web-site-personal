@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Nav = styled.nav`
    padding: 0.7rem;
@@ -29,7 +30,7 @@ export const NavbarItems = styled.div`
    }
 `
 
-export const ItemNav = styled.a`
+export const ItemNav = styled(AnchorLink)`
    color: ${(props) => (props.theme === true ? '#f8f8f8' : '#5340ff')};
    font-weight: 600;
    text-decoration: none;

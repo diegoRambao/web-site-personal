@@ -8,7 +8,7 @@ import ThemeContext from '../../context/ThemeContext'
 export const About = () => {
    const { isDark } = useContext(ThemeContext)
    return (
-      <AboutSection>
+      <AboutSection id="about">
          <div className="text-center">
             <Title label="About me" />
          </div>

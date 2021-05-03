@@ -11,7 +11,7 @@ export const Contact = () => {
       console.log('Submeted...')
    }
    return (
-      <SectionContact>
+      <SectionContact id="contact">
          <div className="text-center">
             <Title label="Get In Touch" />
          </div>

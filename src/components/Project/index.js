@@ -12,7 +12,7 @@ import project_pets from '../../static/images/Thumbnail-Adopcion.jpg'
 export const Project = () => {
    const { isDark } = useContext(ThemeContext)
    return (
-      <SectionProject>
+      <SectionProject id="project">
          <div className="text-center">
             <Title label="Projects" />
          </div>
