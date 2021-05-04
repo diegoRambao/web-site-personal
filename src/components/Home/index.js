@@ -25,7 +25,7 @@ export const Home = () => {
                <HomeText theme={isDark}>
                   <SmallParagraph>Hola soy</SmallParagraph>
                   <HomeTitle>DIEGO RAMBAO</HomeTitle>
-                  <TightParagraph>DESARROLLADOR WEB CREATIVO </TightParagraph>
+                  <TightParagraph>DESARROLLADOR DE SOFTWARE</TightParagraph>
                   <ContainerButtonCv>
                      <Button label="Descargar CV" />
                   </ContainerButtonCv>

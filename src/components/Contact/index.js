@@ -18,7 +18,7 @@ export const Contact = () => {
    return (
       <SectionContact id="contact">
          <div className="text-center">
-            <Title label="Get In Touch" />
+            <Title label="Contáctame" />
          </div>
 
          <div className="container">
@@ -43,6 +43,18 @@ export const Contact = () => {
 
                <form onSubmit={handleSubmit(onSubmit)} className="form-contact">
                   <div className="form-control">
+                     <label htmlFor="name">Nombre</label>
+                     <input
+                        {...register('name', { required: true })}
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Juan José"
+                        className="input-text-contact"
+                     />
+                     {errors.name?.type && 'El nombre es requerido'}
+                  </div>
+                  <div className="form-control">
                      <label htmlFor="email">Email</label>
                      <input
                         {...register('email', { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })}
@@ -56,24 +68,12 @@ export const Contact = () => {
                      {errors.email?.type === 'pattern' && 'Digite un correo valido'}
                   </div>
                   <div className="form-control">
-                     <label htmlFor="name">Name</label>
-                     <input
-                        {...register('name', { required: true })}
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Juan José"
-                        className="input-text-contact"
-                     />
-                     {errors.name?.type && 'El nombre es requerido'}
-                  </div>
-                  <div className="form-control">
-                     <label htmlFor="message">Messsage</label>
+                     <label htmlFor="message">Mensaje</label>
                      <textarea
                         {...register('message', { required: true })}
                         name="message"
                         id="message"
-                        placeholder="Hey, there!"
+                        placeholder="¡Hey, Hola!"
                         className="textarea-contact"
                      ></textarea>
                      {errors.message?.type && 'El mensaje es requerido'}

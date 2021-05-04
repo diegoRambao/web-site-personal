@@ -14,7 +14,7 @@ export const Project = () => {
    return (
       <SectionProject id="project">
          <div className="text-center">
-            <Title label="Projects" />
+            <Title label="Portafolio" />
          </div>
          <ContainerProjects>
             <ProjectRow

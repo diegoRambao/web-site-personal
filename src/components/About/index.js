@@ -10,7 +10,7 @@ export const About = () => {
    return (
       <AboutSection id="about">
          <div className="text-center">
-            <Title label="About me" />
+            <Title label="Sobre mi" />
          </div>
          <CirculeAbout src={circle} alt="circle about" loading="lazy" />
          <div className="container">
@@ -20,14 +20,13 @@ export const About = () => {
                </div>
                <AboutText>
                   <Paragraph theme={isDark}>
-                     Hi, I'm Anurag Hazra, a passionate self-taught frontEnd web developer from India, currently working at
-                     timeless.co as a FrontEnd engineer. I tend to make use of modern web technologies to build websites that look
-                     great, feel fantastic, and function correctly. I am especially focusing on Reactjs.
+                     Hola, soy Diego Rambao, un amante del café☕, un apasionado desarrollador de software autodidacta de
+                     Colombia, Con una sólida formación educativa en tecnología de la información 💻. También estoy interesado en
+                     el diseño UX/UI.
                   </Paragraph>
                   <Paragraph theme={isDark}>
-                     I'm also a certified graphic designer from "Ramakrishna Mission Shilpamandira". I also do Graphic and UI
-                     designing. Since I love both programming and designing, I'm also interested in creating programmatic designs
-                     and creative coding projects.
+                     Soy un entusiasta de JavaScript, extremadamente apasionado por la codificación. Me encanta aprender cosas
+                     nuevas todos los días y estar al día con las nuevas tecnologías💙.
                   </Paragraph>
                </AboutText>
             </AboutSectionContainer>

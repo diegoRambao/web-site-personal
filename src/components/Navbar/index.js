@@ -14,16 +14,16 @@ export const Navbar = () => {
                <div style={{ display: 'flex', alignItems: 'center' }}>
                   <NavbarItems>
                      <ItemNav href="#home" themedark={isDark ? 1 : 0} offset="100">
-                        Home
+                        Inicio
                      </ItemNav>
                      <ItemNav href="#about" themedark={isDark ? 1 : 0} offset="100">
-                        About me
+                        Sobre mi
                      </ItemNav>
                      <ItemNav href="#project" themedark={isDark ? 1 : 0} offset="100">
-                        Projects
+                        Portafolio
                      </ItemNav>
                      <ItemNav href="#contact" themedark={isDark ? 1 : 0} offset="100">
-                        Contact
+                        Contáctame
                      </ItemNav>
                   </NavbarItems>
                   <ToggleTheme />
