@@ -4,8 +4,8 @@ import ThemeContext from '../../context/ThemeContext'
 import { Title } from '../Title'
 import { ProjectRow } from '../ProjectRow'
 import { CardOtherProject } from '../CardOtherProject'
-import project_task from '../../static/images/Thumbnail-ListaDeTareas.jpg'
-import project_guappjolotas from '../../static/images/Thumbnail-guappjolotas.jpg'
+import project_porfolio from '../../static/images/thumbnail-porfolio.jpg'
+import project_resource from '../../static/images/thumbnail-resource.jpg'
 import project_blockmaster from '../../static/images/Thumbnail-blockmaster.jpg'
 import project_pets from '../../static/images/Thumbnail-Adopcion.jpg'
 
@@ -21,18 +21,18 @@ export const Project = () => {
                reverse={false}
                theme={isDark}
                link="/project"
-               img={project_task}
-               title="Lista de tareas"
-               desription="Con esta app podrás organizar todas tus ideas y planear tus próximos proyectos, con el fin de..."
+               img={project_porfolio}
+               title="Portafolio Personal"
+               desription="Este es un sitio web personal donde se puede ver información sobre mi, mis proyectos y poder contactarme."
             />
 
             <ProjectRow
                reverse={true}
                theme={isDark}
                link="/project"
-               img={project_guappjolotas}
-               title="Guappjolotas"
-               desription="Nada como una Guajolota para empezar el día. Disfruta del diseño de esta bonita y completa..."
+               img={project_resource}
+               title="Resource App"
+               desription="Guarda y busca los recursos que te ayudarán a realizar tu trabajo mucho mas rapido y eficiente."
             />
 
             <OtherProjects>
