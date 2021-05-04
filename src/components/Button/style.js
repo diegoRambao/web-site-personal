@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const ButtonPrimay = styled.button`
+export const ButtonPrimay = styled.a`
+   text-decoration: none;
    border: none;
    outline: none;
    background: #5340ff;
