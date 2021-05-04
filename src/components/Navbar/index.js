@@ -13,16 +13,16 @@ export const Navbar = () => {
                <NavbarImg src={logo} alt="Logo brand" loading="lazy" />
                <div style={{ display: 'flex', alignItems: 'center' }}>
                   <NavbarItems>
-                     <ItemNav href="#home" theme={isDark} offset="100">
+                     <ItemNav href="#home" themedark={isDark ? 1 : 0} offset="100">
                         Home
                      </ItemNav>
-                     <ItemNav href="#about" theme={isDark} offset="100">
+                     <ItemNav href="#about" themedark={isDark ? 1 : 0} offset="100">
                         About me
                      </ItemNav>
-                     <ItemNav href="#project" theme={isDark} offset="100">
+                     <ItemNav href="#project" themedark={isDark ? 1 : 0} offset="100">
                         Projects
                      </ItemNav>
-                     <ItemNav href="#contact" theme={isDark} offset="100">
+                     <ItemNav href="#contact" themedark={isDark ? 1 : 0} offset="100">
                         Contact
                      </ItemNav>
                   </NavbarItems>

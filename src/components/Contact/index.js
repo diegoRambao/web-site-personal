@@ -4,12 +4,17 @@ import { Title } from '../Title'
 import { ListOfSocialMedia } from '../ListOfSocialMedia'
 import { MapPin, Mail, Phone } from 'react-feather'
 import ThemeContext from '../../context/ThemeContext'
+import { useForm } from 'react-hook-form'
 
 export const Contact = () => {
+   const {
+      register,
+      formState: { errors },
+      handleSubmit,
+   } = useForm()
    const { isDark } = useContext(ThemeContext)
-   const handleSubmit = () => {
-      console.log('Submeted...')
-   }
+
+   const onSubmit = (data) => console.log(data)
    return (
       <SectionContact id="contact">
          <div className="text-center">
@@ -36,20 +41,46 @@ export const Contact = () => {
                   <ListOfSocialMedia color={isDark ? '#f8f8f8' : '#414141'} />
                </div>
 
-               <form onSubmit={handleSubmit} className="form-contact">
+               <form onSubmit={handleSubmit(onSubmit)} className="form-contact">
                   <div className="form-control">
-                     <label for="email">Email</label>
-                     <input type="text" name="email" id="email" placeholder="example@gmail.com" className="input-text-contact" />
+                     <label htmlFor="email">Email</label>
+                     <input
+                        {...register('email', { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })}
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        className="input-text-contact"
+                     />
+                     {errors.email?.type === 'required' && 'El correo es requerido'}
+                     {errors.email?.type === 'pattern' && 'Digite un correo valido'}
                   </div>
                   <div className="form-control">
-                     <label for="name">Name</label>
-                     <input type="text" name="name" id="name" placeholder="Juan José" className="input-text-contact" />
+                     <label htmlFor="name">Name</label>
+                     <input
+                        {...register('name', { required: true })}
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Juan José"
+                        className="input-text-contact"
+                     />
+                     {errors.name?.type && 'El nombre es requerido'}
                   </div>
                   <div className="form-control">
-                     <label for="message">Messsage</label>
-                     <textarea name="message" id="message" placeholder="Hey, there!" className="textarea-contact"></textarea>
+                     <label htmlFor="message">Messsage</label>
+                     <textarea
+                        {...register('message', { required: true })}
+                        name="message"
+                        id="message"
+                        placeholder="Hey, there!"
+                        className="textarea-contact"
+                     ></textarea>
+                     {errors.message?.type && 'El mensaje es requerido'}
                   </div>
-                  <button className="button-submit-contact">Enviar</button>
+                  <button className="button-submit-contact" type="submit">
+                     Enviar
+                  </button>
                </form>
             </ContainerContact>
          </div>

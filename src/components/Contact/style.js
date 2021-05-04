@@ -51,7 +51,7 @@ export const ContainerContact = styled.div`
       margin-top: 10px;
    }
    label {
-      color: #414141;
+      color: ${(props) => (props.theme === true ? '#f8f8f8' : '#414141')};
    }
    input,
    textarea {
