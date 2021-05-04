@@ -10,11 +10,9 @@ export const Contact = () => {
    const {
       register,
       formState: { errors },
-      handleSubmit,
    } = useForm()
    const { isDark } = useContext(ThemeContext)
 
-   const onSubmit = (data) => console.log(data)
    return (
       <SectionContact id="contact">
          <div className="text-center">
@@ -29,10 +27,10 @@ export const Contact = () => {
                      Estoy disponible para trabajar en sus proyectos y dar vida a sus ideas. Estoy a solo un clic de distancia.
                   </p>
                   <p className="contact-info-item">
-                     <MapPin /> <span>Barranquillla, Atlantico</span>
+                     <MapPin /> <span>Barranquillla, Colombia</span>
                   </p>
                   <p className="contact-info-item">
-                     <Mail /> <span>diegoandresrambao@gmail.com</span>
+                     <Mail /> <span>diegoandrestrom04@gmail.com</span>
                   </p>
                   <p className="contact-info-item">
                      <Phone /> <span> +57 3003086333</span>
@@ -41,7 +39,7 @@ export const Contact = () => {
                   <ListOfSocialMedia color={isDark ? '#f8f8f8' : '#414141'} />
                </div>
 
-               <form onSubmit={handleSubmit(onSubmit)} className="form-contact">
+               <form action="https://formspree.io/f/xrgreoaz" method="POST" className="form-contact">
                   <div className="form-control">
                      <label htmlFor="name">Nombre</label>
                      <input
