@@ -20,7 +20,7 @@ export const Project = () => {
             <ProjectRow
                reverse={false}
                theme={isDark}
-               link="/project"
+               link="https://github.com/diegoRambao/web-site-personal"
                img={project_porfolio}
                title="Portafolio Personal"
                desription="Este es un sitio web personal donde se puede ver información sobre mi, mis proyectos y poder contactarme."
@@ -29,7 +29,7 @@ export const Project = () => {
             <ProjectRow
                reverse={true}
                theme={isDark}
-               link="/project"
+               link="https://github.com/diegoRambao/resource-app"
                img={project_resource}
                title="Resource App"
                desription="Guarda y busca los recursos que te ayudarán a realizar tu trabajo mucho mas rapido y eficiente."

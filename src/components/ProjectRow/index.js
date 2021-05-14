@@ -12,7 +12,7 @@ export const ProjectRow = ({ theme, link, img, title, desription, reverse }) => 
             <Title theme={theme}>{title}</Title>
             <Description theme={theme}>{desription}</Description>
             <ProjectLink>
-               <Button label="Ver proyecto" />
+               <Button label="Ver proyecto" link={link} />
             </ProjectLink>
          </ContainerText>
       </Container>
